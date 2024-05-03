@@ -1,0 +1,29 @@
+
+
+
+145229
+
+With Cloudsoc with DLP enabled
+5MB PPTX file upload in MSteam web - File get uploaded and investigate logs are also created.
+5MB PPTX file with DLP risk upload/download in MSteam web - File get uploaded/downloaded and investigate logs and policy violation logs are also created.
+17MB PPTX (around 4500 slides) file upload in MSteam web - File upload fails even investigate logs are not created. (Not a product issue)
+34MB PPTX (around 9000 slides) file upload in MSteam web - File upload happens, investigate log created for file upload activity also the content inspection skip message is shown (as the file is >30MB)
+Open 34MB file in browser - It takes 2 min 50 seconds to open file, investigate log is created.
+
+Without Cloudsoc 
+17MB PPTX file upload in MSteam web - File upload fails (Same file used in both cases)
+Open 34MB file in browser - It takes 2 min 30 seconds to open file.
+
+
+Policy
+
+Two issues by Blue cross blue shield, support going to schedule a call tomorrow. 
+CASB-128572-  file uploads are not being detected intermittently
+CASB-128235 - o365 slowness 
+
+CASB-128231 - WSS not blcking o365 login
+
+
+
+File size reported incorrectly in msteam/site etc.
+One factor - internet speed at customer side while reproducing the issue
